@@ -38,3 +38,6 @@
   - Đảm bảo không chỉnh sửa trực tiếp trên nhánh `main` nếu làm việc nhóm.
   - Kiểm tra kỹ các file cấu hình như `.gitignore`, `package.json` (nếu có).
 
+## Liên hệ
+
+- Email: [nguyenduclongtbb@gmail.com]
