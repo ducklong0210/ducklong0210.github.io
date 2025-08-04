@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.cv-container {
+    display: flex;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-column {
+    width: 35%;
+    background-color: #2c3e50; /* Màu xanh đậm */
+    color: #fff;
+    padding: 30px;
+}
+
+.right-column {
+    width: 65%;
+    padding: 30px;
+}
+
+.profile-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #34495e;
+}
+
+.left-column h1 {
+    font-size: 2.2em;
+    margin: 10px 0;
+}
+
+.left-column p {
+    font-size: 1.1em;
+    margin-top: 0;
+    opacity: 0.8;
+}
+
+.left-column h2 {
+    font-size: 1.5em;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+.left-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.left-column ul li {
+    margin-bottom: 10px;
+}
+
+.left-column ul li i {
+    width: 25px;
+    text-align: center;
+}
+
+.left-column a {
+    color: #fff;
+    text-decoration: none;
+    word-wrap: break-word; /* Ngăn đường link quá dài bị tràn ra ngoài */
+}
+
+.left-column .skills-section ul li,
+.left-column .hobbies-section ul li {
+    margin-bottom: 5px;
+}
+
+/* Phần cột phải */
+.right-column .section {
+    margin-bottom: 30px;
+}
+
+.right-column h2 {
+    font-size: 1.8em;
+    color: #2c3e50;
+    border-bottom: 2px solid #bdc3c7;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.right-column .item {
+    margin-bottom: 20px;
+}
+
+.right-column .item h3 {
+    font-size: 1.3em;
+    margin: 0;
+    color: #34495e;
+}
+
+.right-column .item .date {
+    font-style: italic;
+    color: #7f8c8d;
+    margin: 5px 0;
+}
+
+.right-column .item ul {
+    padding-left: 20px;
+}
+
+.right-column .item ul li {
+    margin-bottom: 5px;
+}
