@@ -4,94 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV của Nguyễn Đức Long</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+       
+    </style>
 </head>
-<body>
+<body class="p-4">
+    <!-- Main CV container -->
     <div class="cv-container">
-        <div class="left-column">
-            <div class="profile-section">
-                <img src="assets/img/jpg/avt-me.jpg" alt="Ảnh đại diện" class="profile-pic">
-                <h2>Nguyễn Đức Long</h2>
-                <p>Giảng viên, lập trình viên</p>
-            </div>
-
-            <div class="contact-section">
-                <h2>Liên hệ</h2>
-                <ul>
-                    <li><i class="fa fa-phone"></i> 0342722287</li>
-                    <li><i class="fa fa-calendar"></i> 02/10/2004</li>
-                    <li><i class="fa fa-envelope"></i> nguyenduclongtbb@gmail.com</li>
-                    <li><i class="fa fa-facebook"></i> <a href="https://www.facebook.com/nguyenducklongtbb" target="_blank">https://...</a></li>
-                    <li><i class="fa fa-location-dot"></i> Trâu Quỳ, Hà Nội</li>
-                </ul>
-            </div>
-
-            <div class="skills-section">
-                <h2>Kỹ năng</h2>
-                <ul>
-                    <li>Font-End: HTML, CSS, Bootstrap</li>
-                    <li>Lập trình game trên Unity</li>
-                    <li>Lập trình ứng dụng mobile</li>
-                    <li>Lập trình ứng dụng trên windows</li>
-                    <li>Database: MySQL, SQL Lite</li>
-                    <li>Có kiến thức cơ bản về Testcase, viết testcase, sử dụng công cụ quản lý lỗi</li>
-                    <li>Các sản phẩm dự án đã thực hiện: <br><a href="https://github.com/ducklong0210" target="_blank">https://github.com/ducklong0210</a></li>
-                    <li>Kỹ năng mềm: Làm việc nhóm, giao tiếp, thuyết trình, quản lý nhóm</li>
-                </ul>
-            </div>
-
-            <div class="hobbies-section">
-                <h2>Sở thích</h2>
-                <ul>
-                    <li>Nghe nhạc</li>
-                    <li>Chơi thể thao</li>
-                    <li>Nghiên cứu về AI</li>
-                </ul>
-            </div>
+        <!-- Header section with avatar, name, and title -->
+        <div class="header-section text-center">
+            <img src="assets/img/jpg/avt-me.jpg" alt="Ảnh đại diện" class="profile-pic mx-auto">
+            <h1 class="text-4xl font-bold mt-4">Nguyễn Đức Long</h1>
+            <p class="mt-2 text-lg font-medium">Lập trình viên | Game Developer</p>
         </div>
 
-        <div class="right-column">
-            <div class="section">
-                <h2>Mục tiêu nghề nghiệp</h2>
-                <p>Em mong muốn áp dụng những kiến thức chuyên môn đã được học để vận dụng và phát huy tốt khả năng của mình trong lĩnh vực lập trình. Những kinh nghiệm làm việc thực tế tại công ty sẽ là cơ sở để em đạt được mục tiêu trở thành một chuyên gia lập trình chuyên nghiệp trong vài năm tới.</p>
-            </div>
-
-            <div class="section">
-                <h2>Học vấn</h2>
-                <div class="item">
-                    <h3>Công nghệ phần mềm</h3>
-                    <p class="date">T10/2022 - Nay</p>
-                    <p>Học Viện Nông Nghiệp Việt Nam</p>
-                    <p class="description">Mô tả quá trình học tập hoặc thành tích của bạn</p>
-                </div>
-            </div>
-
-            <div class="section">
-                <h2>Kinh nghiệm làm việc</h2>
-                <div class="item">
-                    <h3>Kĩ thuật viên vận hành Lớp học trực tuyến</h3>
-                    <p class="date">T11/2024 - T4/2025</p>
-                    <p>CÔNG TY TNHH PHÁT TRIỂN GIẢI PHÁP & CNTT DIỆP ANH</p>
-                    <ul>
-                        <li>Kiểm tra danh sách cần hỗ trợ</li>
-                        <li>Liên hệ theo SBT được cung cấp để bổ trợ phụ huynh cài đặt app</li>
-                        <li>Test cam, test mic của học viên trước khi buổi học bắt đầu</li>
-                        <li>Giám sát ca học để xử lý lỗi kịp thời</li>
-                        <li>Chăm sóc Khách hàng</li>
-                        <li>Kiểm tra thiết bị của giáo viên nước ngoài trước khi bắt đầu dạy</li>
+        <div class="md:flex">
+            <!-- Left column for contact info, skills, hobbies -->
+            <div class="left-column p-8 md:w-1/3">
+                <!-- Contact section -->
+                <div class="contact-section mb-8">
+                    <h2 class="text-xl font-bold text-gray-800 pb-2 border-b-2 border-gray-300">Liên hệ</h2>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <li><i class="fa-solid fa-phone mr-1 text-blue-600"></i>0342722287</li>
+                        <li><i class="fa-solid fa-calendar mr-1 text-blue-600"></i>02/10/2004</li>
+                        <li><i class="fa-solid fa-envelope mr-1 text-blue-600"></i>nguyenduclongtbb@gmail.com</li>
+                        <li><i class="fa-solid fa-link mr-1 text-blue-600"></i><a href="https://github.com/ducklong0210" target="_blank" class="hover:underline">github.com/ducklong0210</a></li>
+                        <li><i class="fa-solid fa-location-dot mr-1 text-blue-600"></i>Trâu Quỳ, Hà Nội</li>
                     </ul>
                 </div>
-                <div class="item">
-                    <h3>Xây dựng và phát triển kênh tiktok</h3>
-                    <p class="date">T10/2022 - hiện tại</p>
-                    <p>FREELANCER</p>
-                    <ul>
-                        <li>Tạo kênh tiktok, tiktokshop</li>
-                        <li>Tìm kiếm sản phẩm để làm tiếp thị liên kết</li>
-                        <li>Chỉnh sửa video, đăng bài theo kế hoạch đã lên</li>
-                        <li>Nghiên cứu các tính năng của Tiktokshop</li>
+
+                <!-- Skills section -->
+               <div class="skills-section mb-8">
+                    <h2 class="text-xl font-bold text-gray-800 pb-2 border-b-2 border-gray-300">Kỹ năng</h2>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <li><strong>Front-End:</strong> <i class="fa-brands fa-html5 mr-1 text-orange-500"></i></i>HTML, <i class="fa-brands fa-css3-alt mr-1 text-blue-500"></i>CSS, Bootstrap</li>
+                        <li><strong>Game Development:</strong> <i class="fa-brands fa-unity mr-1 text-gray-800"></i>Unity</li>
+                        <li><strong>Mobile App:</strong> <i class="fa-brands fa-android mr-1 text-green-600"></i>Android Studio</li>
+                        <li><strong>Desktop App:</strong> <i class="fa-brands fa-windows mr-1 text-blue-500"></i>WinForms (.NET)</li>
+                        <li><strong>Database:</strong> <i class="fa-solid fa-database mr-1 text-blue-600"></i>MySQL, SQL Lite</li>
+                        <li><strong>Testing:</strong> Kiến thức cơ bản về Testcase và quản lý lỗi</li>
+                        <li><strong>Kỹ năng mềm:</strong> Làm việc nhóm, giao tiếp, thuyết trình</li>
                     </ul>
+                </div>
+
+                <!-- Hobbies section -->
+                <div class="hobbies-section">
+                    <h2 class="text-xl font-bold text-gray-800 pb-2 border-b-2 border-gray-300">Sở thích</h2>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <li>Nghe nhạc</li>
+                        <li>Chơi thể thao</li>
+                        <li>Nghiên cứu về AI</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Right column for summary, education, experience -->
+            <div class="right-column p-8 md:w-2/3">
+                <!-- Career objective section -->
+                <div class="section mb-8">
+                    <h2 class="text-2xl font-bold text-blue-900 pb-2 border-b-2 border-gray-300">Mục tiêu nghề nghiệp</h2>
+                    <p class="text-gray-700">Tôi mong muốn áp dụng những kiến thức chuyên môn đã được học để phát triển bản thân trong lĩnh vực lập trình. Với kinh nghiệm làm việc thực tế, tôi đặt mục tiêu trở thành một chuyên gia lập trình chuyên nghiệp trong vài năm tới.</p>
+                </div>
+
+                <!-- Education section -->
+                <div class="section mb-8">
+                    <h2 class="text-2xl font-bold text-blue-900 pb-2 border-b-2 border-gray-300">Học vấn</h2>
+                    <div class="item">
+                        <h3 class="text-xl font-semibold">Công nghệ phần mềm</h3>
+                        <p class="text-sm text-gray-500">T10/2022 - Nay</p>
+                        <p class="mt-1 text-gray-700">Học Viện Nông Nghiệp Việt Nam</p>
+                    </div>
+                </div>
+
+                <!-- Work experience section -->
+                <div class="section mb-8">
+                    <h2 class="text-2xl font-bold text-blue-900 pb-2 border-b-2 border-gray-300">Kinh nghiệm làm việc</h2>
+                    <div class="item mb-6">
+                        <h3 class="text-xl font-semibold">Kỹ thuật viên vận hành lớp học trực tuyến</h3>
+                        <p class="text-sm text-gray-500">T11/2024 - T4/2025</p>
+                        <p class="mt-1 text-gray-700">CÔNG TY TNHH PHÁT TRIỂN GIẢI PHÁP & CNTT DIỆP ANH</p>
+                        <ul class="list-disc list-inside mt-2 text-gray-600 space-y-1">
+                            <li>Kiểm tra danh sách cần hỗ trợ và liên hệ phụ huynh cài đặt ứng dụng.</li>
+                            <li>Kiểm tra camera và micro của học viên trước buổi học.</li>
+                            <li>Giám sát ca học để xử lý lỗi kỹ thuật kịp thời.</li>
+                            <li>Chăm sóc khách hàng và kiểm tra thiết bị của giáo viên nước ngoài.</li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <h3 class="text-xl font-semibold">Xây dựng và phát triển kênh TikTok</h3>
+                        <p class="text-sm text-gray-500">T10/2022 - Hiện tại</p>
+                        <p class="mt-1 text-gray-700">FREELANCER</p>
+                        <ul class="list-disc list-inside mt-2 text-gray-600 space-y-1">
+                            <li>Tạo và quản lý kênh TikTok, TikTok Shop.</li>
+                            <li>Tìm kiếm sản phẩm và thực hiện tiếp thị liên kết (affiliate marketing).</li>
+                            <li>Sản xuất video và đăng bài theo kế hoạch.</li>
+                            <li>Nghiên cứu và cập nhật các tính năng mới của TikTok Shop.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
