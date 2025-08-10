@@ -74,12 +74,10 @@ document.addEventListener('DOMContentLoaded', () => {
             footerText: '&copy; 2025 Nguyễn Đức Long. All rights reserved.',
         }
     };
-
-    // DOM elements
-    const langDefaultBtn = document.getElementById('lang-default');
-    const langVnBtn = document.getElementById('lang-vn');
-    const langEnBtn = document.getElementById('lang-en');
     
+    // DOM elements
+    const langSelect = document.getElementById('lang-select');
+
     // Function to update the page content based on the selected language
     const updateContent = (lang) => {
         const data = content[lang];
@@ -116,28 +114,13 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('.footer-content span:first-child').innerHTML = data.footerText;
     };
     
-    // Add event listeners to the buttons
-    langDefaultBtn.addEventListener('click', () => {
-        updateContent('default');
-        langVnBtn.classList.remove('active');
-        langEnBtn.classList.remove('active');
-        langDefaultBtn.classList.add('active');
-    });
-
-    langVnBtn.addEventListener('click', () => {
-        updateContent('vn');
-        langDefaultBtn.classList.remove('active');
-        langEnBtn.classList.remove('active');
-        langVnBtn.classList.add('active');
-    });
-
-    langEnBtn.addEventListener('click', () => {
-        updateContent('en');
-        langDefaultBtn.classList.remove('active');
-        langVnBtn.classList.remove('active');
-        langEnBtn.classList.add('active');
+    // Add event listener to the dropdown menu
+    langSelect.addEventListener('change', (event) => {
+        const selectedLang = event.target.value;
+        updateContent(selectedLang);
     });
 
     // Set default language on page load
     updateContent('default');
 });
+
