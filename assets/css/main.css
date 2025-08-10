@@ -5724,23 +5724,23 @@ a img {
 }
 
 .lang-dropdown {
-  background-color: var(--bg-color); /* Nền của dropdown */
-  color: var(--text-color);
-  border: 1px solid var(--accent-color);
-  padding: 8px 12px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  -webkit-appearance: none; /* Tắt giao diện mặc định của trình duyệt */
-  -moz-appearance: none;
-  appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23fff'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 10px center;
-  background-size: 1em;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border: 1px solid var(--accent-color);
+    padding: 8px 30px 8px 12px; /* Tăng padding bên phải để có khoảng trống cho mũi tên tùy chỉnh */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23fff'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 0.8em; /* Điều chỉnh kích thước mũi tên */
 }
 
 .lang-dropdown:focus {
-  outline: none;
-  border-color: var(--highlight-color);
+    outline: none;
+    border-color: var(--highlight-color);
 }
