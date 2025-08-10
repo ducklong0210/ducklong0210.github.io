@@ -5716,4 +5716,29 @@ a img {
     text-shadow: none;
     background: none;
   }
-  
+  /* Styling for the language switch buttons */
+.header-lang-switch {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.lang-btn {
+  background: none;
+  border: 1px solid var(--accent-color); /* You can change this to your desired color */
+  color: var(--text-color);
+  padding: 5px 10px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.lang-btn.active {
+  background-color: var(--accent-color);
+  color: var(--bg-color); /* Text color for the active button */
+}
+
+.lang-btn:hover {
+  opacity: 0.8;
+}
