@@ -5716,7 +5716,20 @@ a img {
     text-shadow: none;
     background: none;
   }
-  /* Styling for the language dropdown */
+
+  /* Định nghĩa các biến màu sắc cơ bản */
+:root {
+  --bg-color: #f0f2f5; /* Màu nền chính sáng hơn */
+  --text-color: #333; /* Màu chữ chính tối hơn để dễ đọc */
+  --accent-color: #007bff; /* Màu xanh dương làm màu nhấn */
+  --highlight-color: #0056b3; /* Màu xanh đậm hơn khi focus */
+  --dropdown-bg: #fff; /* Màu nền cho dropdown menu là màu trắng */
+  --dropdown-hover-bg: #e9ecef; /* Màu nền khi hover vào option */
+  --dropdown-selected-bg: #007bff; /* Màu nền cho option đang được chọn */
+  --dropdown-selected-text: #fff; /* Màu chữ cho option đang được chọn */
+}
+
+/* Styling for the language dropdown */
 .header-lang-switch {
   display: flex;
   align-items: center;
@@ -5724,23 +5737,37 @@ a img {
 }
 
 .lang-dropdown {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    border: 1px solid var(--accent-color);
-    padding: 8px 30px 8px 12px; /* Tăng padding bên phải để có khoảng trống cho mũi tên tùy chỉnh */
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23fff'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 10px center;
-    background-size: 0.8em; /* Điều chỉnh kích thước mũi tên */
+  background-color: var(--dropdown-bg);
+  color: var(--text-color);
+  border: 1px solid var(--accent-color);
+  padding: 8px 30px 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23000'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 0.8em;
 }
 
 .lang-dropdown:focus {
-    outline: none;
-    border-color: var(--highlight-color);
+  outline: none;
+  border-color: var(--highlight-color);
+}
+
+.lang-dropdown option {
+    background-color: var(--dropdown-bg);
+    color: var(--text-color);
+}
+
+.lang-dropdown option:checked {
+    background-color: var(--dropdown-selected-bg);
+    color: var(--dropdown-selected-text);
+}
+
+.lang-dropdown option:hover {
+    background-color: var(--dropdown-hover-bg);
 }

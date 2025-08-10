@@ -45,8 +45,8 @@ document.addEventListener('DOMContentLoaded', () => {
             project2Title: 'Ứng dụng Quản lý Sách',
             project2Desc: `Tôi đã phát triển một ứng dụng Windows Forms bằng C# để xây dựng giao diện người dùng cho một cửa hàng sách. Ứng dụng này cho phép người dùng duyệt sản phẩm, xem thông số kỹ thuật và mô phỏng trải nghiệm mua hàng. Dự án tập trung vào thiết kế giao diện người dùng (UI/UX) và đóng vai trò như một nguyên mẫu cho phiên bản máy tính để bàn của một trang web thương mại điện tử.`,
             projectLink: 'Xem chi tiết!',
-            myCvVn: 'CV của tôi (Tiếng Việt)',
-            myCvEng: 'CV của tôi (Tiếng Anh)',
+            myCvVn: 'CV Tiếng Việt',
+            myCvEng: 'CV Tiếng Anh',
             footerText: '&copy; 2025 Nguyễn Đức Long. Đã đăng ký bản quyền.',
         },
         en: {
