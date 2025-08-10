@@ -123,4 +123,3 @@ document.addEventListener('DOMContentLoaded', () => {
     // Set default language on page load
     updateContent('default');
 });
-
