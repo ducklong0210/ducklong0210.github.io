@@ -5811,9 +5811,9 @@ a img {
     .logo-area {
         margin-right: auto; /* Đẩy logo sang trái */
     }
-    .header-social,
-    .header-lang-switch {
-        display: none; /* Ẩn các nút mạng xã hội và chuyển đổi ngôn ngữ trên mobile */
+    .header-social
+  {
+        display: none; 
     }
     .skills-grid,
     .projects-grid {

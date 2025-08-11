@@ -3,6 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const content = {
         default: {
             siteSlogan: 'Programmer & Game Developer',
+            navabout: 'About Me',
+            navskill: 'Skills',
+            navproject: 'Projects',
             aboutMeTitle: 'About Me',
             introRole: 'Sinh viên & Lập trình viên về Game',
             introDesc: `Tôi là sinh viên tại Học viện Nông nghiệp Việt Nam, chuyên ngành Công nghệ Phần mềm.<br>
@@ -27,6 +30,9 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         vn: {
             siteSlogan: 'Lập trình viên & Nhà phát triển Game',
+            navabout: 'Về Tôi',
+            navskill: 'Kỹ Năng',
+            navproject: 'Dự Án',
             aboutMeTitle: 'Về Tôi',
             introRole: 'Sinh viên & Lập trình viên về Game',
             introDesc: `Tôi là sinh viên tại Học viện Nông nghiệp Việt Nam, chuyên ngành Công nghệ Phần mềm.<br>
@@ -51,6 +57,9 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         en: {
             siteSlogan: 'Programmer & Game Developer',
+             navabout: 'About Me',
+            navskill: 'Skills',
+            navproject: 'Projects',
             aboutMeTitle: 'About Me',
             introRole: 'Student & Game Programmer',
             introDesc: `I'm a student at Vietnam National University of Agriculture, majoring in Software Technology.<br>
@@ -83,6 +92,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Function to update the page content based on the selected language (unchanged)
     const updateContent = (lang) => {
         const data = content[lang];
+        document.querySelector('.nav-about').innerHTML = data.navabout;
+        document.querySelector('.nav-skill').innerHTML = data.navskill;
+        document.querySelector('.nav-project').innerHTML = data.navproject;
         document.querySelector('.site-slogan').innerHTML = data.siteSlogan;
         document.querySelector('a[href="mycvvn.html"]').innerHTML = data.myCvVn;
         document.querySelector('a[href="mycveng.html"]').innerHTML = data.myCvEng;
