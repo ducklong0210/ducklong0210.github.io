@@ -5771,62 +5771,61 @@ a img {
 .lang-dropdown option:hover {
     background-color: var(--dropdown-hover-bg);
 }
-/* responsive mobile */
-/* Tùy chỉnh cho màn hình có kích thước tối đa 768px (máy tính bảng và điện thoại) */
-@media (max-width: 768px) {
-  
-  .container {
-    width: 90%; /* Điều chỉnh chiều rộng container để có thêm khoảng trống */
-  }
+/* ... CSS code ... */
 
-  /* Điều chỉnh header */
-  .main-header {
-    padding: 10px 0; /* Giảm padding trên và dưới */
-  }
+/* Responsive mobile */
+/* Hide hamburger by default */
+.nav-toggle {
+    display: none;
+}
 
-  .header-flex {
-    flex-direction: column; /* Sắp xếp các phần tử theo chiều dọc */
-    align-items: center; /* Căn giữa các phần tử */
-    text-align: center;
-  }
-
-  .logo-area {
-    margin-bottom: 15px; /* Thêm khoảng trống dưới logo */
-  }
-
-  .main-nav {
-    flex-direction: column; /* Sắp xếp các liên kết theo chiều dọc */
-    margin-bottom: 15px;
-  }
-
-  .nav-link {
-    margin: 5px 0; /* Thêm khoảng trống giữa các liên kết */
-    padding: 5px 10px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Thêm đường viền mỏng */
-  }
-  
-  .header-social {
-    margin-bottom: 15px;
-  }
-
-  .header-lang-switch {
-    margin-left: 0;
-  }
-
-  /* Điều chỉnh phần giới thiệu */
-  .user-details {
-    padding: 20px; /* Giảm padding */
-  }
-  
-  .user-details .intro-avatar {
-    width: 100px;
-    height: 100px;
-  }
-
-  /* Điều chỉnh phần Projects */
-  .projects-grid,
-  .skills-grid {
-    grid-template-columns: 1fr; /* Chỉ hiển thị một cột */
-    gap: 20px; /* Điều chỉnh khoảng cách */
-  }
+/* Responsive styles for mobile */
+@media (max-width: 900px) {
+    .header-flex {
+        flex-wrap: wrap; /* Cho phép các mục xuống dòng */
+    }
+    .main-nav {
+        display: none; /* Ẩn menu chính trên mobile */
+        flex-direction: column;
+        width: 100%;
+        order: 3; /* Đặt menu xuống dưới cùng */
+    }
+    .main-nav.active {
+        display: flex; /* Hiện menu khi có class 'active' */
+    }
+    .nav-link {
+        width: 100%; /* Đặt mỗi liên kết chiếm toàn bộ chiều rộng */
+        text-align: center;
+        padding: 10px 0;
+    }
+    .nav-toggle {
+        display: block; /* Hiện nút hamburger */
+        background: none;
+        border: none;
+        font-size: 2.2rem;
+        z-index: 10;
+        color: #222;
+        cursor: pointer;
+        margin-left: auto; /* Đẩy nút sang phải */
+    }
+    .logo-area {
+        margin-right: auto; /* Đẩy logo sang trái */
+    }
+    .header-social,
+    .header-lang-switch {
+        display: none; /* Ẩn các nút mạng xã hội và chuyển đổi ngôn ngữ trên mobile */
+    }
+    .skills-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    .user-details {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
 }

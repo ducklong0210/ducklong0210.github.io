@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Language content object
+    // Language content object (unchanged)
     const content = {
         default: {
             siteSlogan: 'Programmer & Game Developer',
@@ -77,22 +77,18 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // DOM elements
     const langSelect = document.getElementById('lang-select');
+    const navToggle = document.querySelector('.nav-toggle');
+    const mainNav = document.querySelector('.main-nav');
 
-    // Function to update the page content based on the selected language
+    // Function to update the page content based on the selected language (unchanged)
     const updateContent = (lang) => {
         const data = content[lang];
-        
-        // Header
         document.querySelector('.site-slogan').innerHTML = data.siteSlogan;
         document.querySelector('a[href="mycvvn.html"]').innerHTML = data.myCvVn;
         document.querySelector('a[href="mycveng.html"]').innerHTML = data.myCvEng;
-        
-        // About section
         document.querySelector('#about .section-title').innerHTML = data.aboutMeTitle;
         document.querySelector('.intro-role').innerHTML = data.introRole;
         document.querySelector('.intro-desc').innerHTML = data.introDesc;
-        
-        // Skills section
         document.querySelector('#skills .section-title').innerHTML = data.skillsTitle;
         document.querySelector('.skill-group:nth-child(1) h3').innerHTML = data.programmingLanguages;
         document.querySelector('.skill-group:nth-child(2) h3').innerHTML = data.frontEnd;
@@ -100,8 +96,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('.skill-group:nth-child(4) h3').innerHTML = data.toolsSoftSkills;
         document.querySelector('.skill-badge:nth-last-child(2)').innerHTML = `<i class="fas fa-users"></i> ${data.teamwork}`;
         document.querySelector('.skill-badge:last-child').innerHTML = `<i class="fas fa-comments"></i> ${data.communication}`;
-        
-        // Projects section
         document.querySelector('#projects .section-title').innerHTML = data.projectsTitle;
         document.querySelector('.project-card:nth-child(1) h3').innerHTML = data.project1Title;
         document.querySelector('.project-card:nth-child(1) .project-desc').innerHTML = data.project1Desc;
@@ -109,17 +103,20 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('.project-card:nth-child(2) h3').innerHTML = data.project2Title;
         document.querySelector('.project-card:nth-child(2) .project-desc').innerHTML = data.project2Desc;
         document.querySelector('.project-card:nth-child(2) .project-link').innerHTML = data.projectLink;
-        
-        // Footer
         document.querySelector('.footer-content span:first-child').innerHTML = data.footerText;
     };
     
-    // Add event listener to the dropdown menu
+    // Add event listener to the dropdown menu (unchanged)
     langSelect.addEventListener('change', (event) => {
         const selectedLang = event.target.value;
         updateContent(selectedLang);
     });
 
-    // Set default language on page load
+    // Set default language on page load (unchanged)
     updateContent('default');
+    
+    // New: Add event listener for the hamburger button
+    navToggle.addEventListener('click', () => {
+        mainNav.classList.toggle('active');
+    });
 });
