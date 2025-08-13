@@ -2,7 +2,6 @@
 ## Hướng dẫn cài đặt
 
 1. **Yêu cầu:**
-   - Cài đặt [Node.js](https://nodejs.org/) nếu dự án sử dụng Node.js.
    - Cài đặt [Git](https://git-scm.com/) để quản lý mã nguồn.
 
 2. **Clone repository:**
